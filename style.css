@@ -1,0 +1,753 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f4ed;
+    color: #49372e;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: #fffdf9;
+}
+
+.logo {
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #49372e;
+    font-size: 14px;
+}
+
+/* HOME */
+
+.home {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: #e9dfd1;
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.welcome, .small-title {
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.home h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.shop-btn {
+    display: inline-block;
+    background: #49372e;
+    color: white;
+    padding: 15px 28px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 90px 10%;
+    text-align: center;
+    background: #fffdf9;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    line-height: 2;
+    color: #79685d;
+}
+
+.about-tagline {
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* COLLECTION */
+
+.products {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #8a7465;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    background: #fffdf9;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #e9dfd1;
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card h3 {
+    margin: 18px 0 10px;
+}
+
+.product-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #79685d;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* CONTACT */
+
+.contact {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 90px 20px;
+    background: #f5eee6;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #49352c;
+    margin-bottom: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contact p {
+    color: #756357;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 10px auto;
+}
+
+.contact-button {
+    display: inline-block;
+    position: static;
+    background: #49352c;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 25px auto 0;
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #806451;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+footer {
+    background: #49372e;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .home {
+        min-height: 420px;
+        padding: 60px 7%;
+    }
+
+    .home h1 {
+        font-size: 39px;
+    }
+
+    .about h2 {
+        font-size: 26px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+#contact {
+    text-align: center !important;
+    display: block;
+    width: 100%;
+}
+
+#contact h2 {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto 20px;
+}
+
+#contact p {
+    text-align: center !important;
+    margin: 12px auto;
+} 
+/* LUXURY FOOTER */
+
+.footer {
+    background: #49372e;
+    color: #fffdf9;
+    text-align: center;
+    padding: 65px 20px 25px;
+}
+
+.footer h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    color: #e9dfd1;
+}
+
+.footer .footer-note {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #806b5e;
+    margin-top: 35px;
+    padding-top: 22px;
+    font-size: 11px;
+    color: #d8c8bb;
+}/* LUXURY NAVIGATION */
+
+.navbar {
+    padding: 25px 7%;
+    background: #fffdf9;
+    border-bottom: 1px solid #e9dfd1;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    letter-spacing: 3px;
+    color: #49372e;
+}
+
+.nav-links a {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b18a6b;
+}/* LUXURY HOMEPAGE */
+
+.home {
+    min-height: 580px;
+    background: linear-gradient(
+        110deg,
+        #e9dfd1,
+        #f5eee6
+    );
+    padding: 100px 10%;
+}
+
+.home-content {
+    max-width: 620px;
+}
+
+.welcome {
+    color: #8a6853;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.home h1 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: normal;
+    color: #49372e;
+    margin-bottom: 25px;
+}
+
+.home-content p {
+    font-size: 15px;
+    line-height: 2;
+    color: #79685d;
+}
+
+.shop-btn {
+    padding: 17px 35px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.shop-btn:hover {
+    background: #806451;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 650px) {
+    .home h1 {
+        font-size: 42px;
+    }
+}/* LUXURY HAIR COLLECTION */
+
+.products {
+    background: #fffdf9;
+    padding: 90px 7%;
+}
+
+.products h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #49372e;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #8a7465;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.product-container {
+    gap: 35px;
+}
+
+.product-card {
+    background: #f8f4ed;
+    border: none;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card h3 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    color: #49372e;
+}
+
+.product-card p {
+    color: #79685d;
+}
+
+.price {
+    color: #806451;
+    font-size: 13px;
+}.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}/* LUXURY PRODUCT CARD FINISH */
+
+.product-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(73, 55, 46, 0.08);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(73, 55, 46, 0.15);
+}
+
+.product-card h3 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}.collection-order {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.order-button {
+    display: inline-block;
+    background: #49372e;
+    color: #fff;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.order-button:hover {
+    background: #806451;
+}.why-us {
+    background: #f8f4ed;
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #49372e;
+    margin-bottom: 15px;
+}
+
+.why-intro {
+    color: #8a7465;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.why-card {
+    background: #fffdf9;
+    padding: 35px 25px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(73, 55, 46, 0.10);
+}
+
+.why-card h3 {
+    font-family: Georgia, serif;
+    color: #49372e;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #79685d;
+    font-size: 14px;
+    line-height: 1.8;
+}.testimonials {
+    background: #fffdf9;
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #49372e;
+    margin-bottom: 15px;
+}
+
+.testimonial-intro {
+    color: #8a7465;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #f8f4ed;
+    padding: 35px 25px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(73, 55, 46, 0.10);
+}
+
+.quote {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color: #a88b73;
+    line-height: 1;
+}
+
+.testimonial-card p {
+    color: #79685d;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 15px 0 20px;
+}
+
+.testimonial-card h3 {
+    font-family: Georgia, serif;
+    color: #49372e;
+    font-size: 15px;
+    font-weight: normal;
+}@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 22px 15px;
+    text-align: center;
+}
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 5px;
+}.nav-links a:hover {
+    color: #a88b73;
+    transition: 0.3s ease;
+}
+
+    .home {
+        padding: 80px 20px;
+    }
+
+.home h1 {
+    font-size: 34px;
+    line-height: 1.3;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+  .home .shop-button {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+    .products,
+    .why-us,
+    .testimonials,
+    .contact {
+        padding: 65px 20px;
+    }
+
+    .product-container,
+    .why-container,
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card,
+    .why-card,
+    .testimonial-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+  .product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+}@media (max-width: 768px) {
+.announcement-bar {
+    padding: 10px;
+.floating-whatsapp {
+    bottom: 18px;
+    right: 15px;
+    padding: 12px 18px;
+    font-size: 12px;
+}
+
+}}
+
+.announcement-bar p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 400px;
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+} .announcement-bar {
+    background: #49372e;
+    color: #f8f4ed;
+    text-align: center;
+    padding: 11px 15px;
+}
+
+.announcement-bar p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: normal;
+}.logo {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #49372e;
+}
+
+.logo span {
+    color: #a88b73;
+    font-style: italic;
+}.logo {
+    text-align: center;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.logo p {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    color: #a88b73;
+    margin-top: 5px;
+}.logo::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 1px;
+    background: #a88b73;
+    margin: 10px auto 0;
+}.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    background: #49372e;
+    color: #fffdf9;
+    padding: 14px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    background: #806451;
+    transform: translateY(-4px);
+}
